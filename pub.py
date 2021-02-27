@@ -31,13 +31,7 @@ async def set(ctx, arg):
 
 @client.command()
 async def help(ctx):
-	embedHelp=discord.Embed(title="Invite Link", url="https://discord.com/api/oauth2/authorize?client_id=764164847238643774&permissions=8&scope=bot", color=0xf90101)
-	embedHelp.set_author(name="Rednek's Bot", url="https://rednek46.github.io", icon_url="https://cdn.discordapp.com/attachments/764604032861732874/774652841276735508/ico.gif")
-	embedHelp.add_field(name="Contribute to this project", value="Join [Galactic Empire](https://discord.gg/2URJ9HF)", inline=False)
-	embedHelp.add_field(name="Also Fill this form to for selection", value="[Google Form](https://forms.gle/HrqAgYsM2Jhz3qZv6)", inline=False)
-	embedHelp.set_footer(text="Currently WIP and subjected for a huge change.")
-	await ctx.send(embed=embedHelp)
-	embedPublish=discord.Embed(title="Auto Publish",color=0xf90101)
+	embedPublish=discord.Embed(title="Auto Publisher",color=0xf90101)
 	embedPublish.add_field(name="Usage", value="r!set #channelname", inline=False)
 	await ctx.send(embed=embedPublish)
 
